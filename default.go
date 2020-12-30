@@ -9,8 +9,8 @@ var DefaultLogger = logger.Logger{
 	Option: logger.Option{
 		PrintLevel: logger.DEBUG,
 		WriteLevel: logger.ERROR,
-		//Writers:    []logger.Writer{cmd.New() },
-		Writers:    []logger.Writer{stdio.New() },
+		Writers:    []logger.Writer{cmd.New() },
+		//Writers:    []logger.Writer{stdio.New() },
 	},
 }
 func Warning(input ...interface{}) {
